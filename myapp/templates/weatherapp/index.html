@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+</head>
+<body>
+        <from method ="POST">
+            {% csrf_token %}
+            <input type="text" placeholder="Enter your City" name="city"/>
+            <button type="submit">Enter</button>
+        </from>
+        <h1>{{description}} <h1>
+        <h1>{{temp}} <h1>
+        <h1>{{day}} <h1>
+        <h1>{{city}} <h1>
+</body>
+</html>
